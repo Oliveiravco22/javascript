@@ -5,26 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Numeros</title>
+    <style>
+        #area1 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        #area2 { 
+            display: inline-block;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        input{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <h1 id="tit">Somando Valores</h1>
+    <div id="area1"></div>
+    <div id="area2"></div>
+    <input type="button" value="Click" onclick="clicar()">
     
     <script>
-        function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('imput#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            
-            var s = n1 + n2
-            
-            res.innerHTML = s
-                }
+        function clicar() {
+            var area1 = window.document.getElementById('area1')
+            var area2 = window.document.getElementById('area2')
+
+            area1.style.background = 'red'
+            area2.style.background = 'green'
+
+        }
+
+        
+
+        
         
     </script>
 </body>
