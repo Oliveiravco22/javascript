@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições multiplas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.932);
+            
+        }
+        body > h1 {
+            
+            color: white;
+        }
+        body > div {
+            
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background: gray;   
+        }
+        div > p {
+            
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+            color: rgb(189, 189, 189);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="tit">Dia da Semana</h1>
+    <div class="domingo"><p>Dom</p></div>
+    <div class="segunda"><p>Seg</p></div>
+    <div class="terca"><p>Ter</p></div>
+    <div class="quarta"><p>Qua</p></div>
+    <div class="quinta"><p>Qui</p></div>
+    <div class="sexta"><p>Sex</p></div>
+    <div class="sabado"><p>Sáb</p></div>
+
+    <script>
+        var sem = new Date()
+        var isem = sem.getDay()
+        var dom = window.document.querySelector('.domingo')
+        var seg = window.document.querySelector('.segunda')
+        var ter = window.document.querySelector('.terca')
+        var qua = window.document.querySelector('.quarta')
+        var qui = window.document.querySelector('.quinta')
+        var sex = window.document.querySelector('.sexta')
+        var sab = window.document.querySelector('.sabado')
+        switch (isem) {
+            case 0 : 
+            dom.style.display = 'block'
+            case 1 : 
+            seg.style.display = 'block'
+            case 2 : 
+            ter.style.display = 'block'
+            case 3 : 
+            qua.style.display = 'block'
+            case 4 : 
+            qui.style.display = 'block'
+            case 5 : 
+            sex.style.display = 'block'
+            case 6 : 
+            sab.style.display = 'block'
+            
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
