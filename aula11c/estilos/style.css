@@ -5,8 +5,50 @@
     padding: 0px;
 }
 body {
-    background: linear-gradient(to bottom, rgb(131, 13, 36), rgb(220, 20, 60), rgb(231, 111, 135));
-    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(31, 2, 7, 0.418);   
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin: 20px;
+}
+
+article {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    margin: auto;
+}
+
+article > div > p {
+    margin: 25px 0px;
+    text-align: left;
+}
+
+.botao{
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+
+.rad {
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.747);
 }
 
 
