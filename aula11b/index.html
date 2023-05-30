@@ -11,6 +11,7 @@
     <div id="manha"><p>Pediodo da Manhã</p></div>
     <div id="tarde"><p>Periodo da Tarde</p></div>
     <div id="noite"><p>Periodo da Noite</p></div>
+    <div id="atual">Atual</div>
 
     <script>
         var periodo = new Date()
@@ -18,11 +19,14 @@
         var manha = window.document.getElementById('manha')
         var tarde = window.document.getElementById('tarde')
         var noite = window.document.getElementById('noite')
+        var atual = window.document.getElementById('atual')
 
         if (hora < 12) {
             manha.style.display = 'block'
         } else if (hora < 18) {
             tarde.style.display = 'block'
+            atual.innerHTML = `A hora atual ${hora} horas`
+            
         }else {
             noite.style.display = 'block'
         }
