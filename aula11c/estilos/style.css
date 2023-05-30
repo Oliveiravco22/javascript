@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: linear-gradient(to bottom, rgb(131, 13, 36), rgb(220, 20, 60), rgb(231, 111, 135));
+    
+}
+
+
