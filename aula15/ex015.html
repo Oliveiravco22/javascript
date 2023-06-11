@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis Compostas</title>
+</head>
+<body>
+    <h1 id="test">Aguarde <br></h1>
+    
+    <script>
+        let res = document.getElementById('test')
+        let num = [3,1,2]
+        num[3]=17
+        num.push(15)
+        
+
+        // for (let pos=0; pos<num.length; pos++) {
+            
+        //     res.innerHTML += (`A posição ${pos} é o ${num[pos]} <br/>`)
+        // }
+
+        for (let pos in num) {
+            res.innerHTML += (`A posição ${pos} é o ${num[pos]} <br/>`)
+        } // essa é uma forma simplificada de usar esse tipo de for
+        
+        
+        // num.sort()
+        // res.innerHTML = (`nosso vetor é o ${num} <br/>`)
+        // res.innerHTML += (`o vetor tem ${num.length} elementos <br/>`)
+        // res.innerHTML += (`a posição 4 do vetor é ${num[4]}`)
+        
+    </script>
+</body>
+</html>

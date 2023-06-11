@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="rest">Impar ou Par? <br></h1>
+
+    <script>
+         let res = document.getElementById('rest')
+
+         function parimp(n) {
+            if (n%2==0) {
+                return 'par'
+            } else {
+                return 'impar'
+            }
+         }
+
+        //  let num = parimp(10)
+
+         res.innerHTML += (`o número 10 é ${parimp(10)}`)
+
+    </script>
+</body>
+</html>
